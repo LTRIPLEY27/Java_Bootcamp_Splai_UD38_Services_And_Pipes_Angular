@@ -1,0 +1,15 @@
+<div *ngIf="articulos != null; else espera">
+  <table border="1">
+    <tr>
+      <td>Codigo</td>
+      <td>Descripcion</td>
+      <td>Precio</td>
+    </tr>
+    <tr *ngFor="let article of articulos">
+      <td>{{article.codigo}}</td>
+      <td>{{article.descripcion}}</td>
+      <td>{{article.precio}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #espera> A LA ESPERA DE RESPUESTA</ng-template>

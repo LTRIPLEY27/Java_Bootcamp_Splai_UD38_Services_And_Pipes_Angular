@@ -1,0 +1,9 @@
+<table border="1">
+    <tr *ngFor="let articulo of articulos"> <!--CON LA DIRECTIVA NGFOR IMPRIMIMOS LOS VALORES UNO A UNO ITERANDO SOBRE EL JSON AL QUE APUNTAMOS-->
+      <td>{{articulo.codigo}}</td>
+      <td>{{articulo.descripcion}}</td>
+      <td>{{articulo.precio}}</td><!--CON LA INTERPOLACION TOMAMOS A LA CLASE DE TIPO ARTICULOS E IMPRIMIMOS CADA UNO DE SUS ATRIBUTOS-->
+    </tr>
+</table>
+
+<router-outlet></router-outlet><!--LO IMPRESCINDIBLE PARA CREAR EL PUENTE ES LA DECLARATIVA DEL ROUTE-OUTLET-->
